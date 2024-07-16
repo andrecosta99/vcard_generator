@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>vCard Generated</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">vCard Generated</h1>
+        <p>Download your vCard <a href="{{ file_url }}" class="btn btn-success">here</a>.</p>
+        <p>Or copy the link:</p>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" id="vcardLink" value="{{ file_url }}" readonly>
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" onclick="copyLink()">Copy</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function copyLink() {
+            var copyText = document.getElementById("vcardLink");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); // For mobile devices
+            document.execCommand("copy");
+            alert("Link copied: " + copyText.value);
+        }
+    </script>
+</body>
+</html>

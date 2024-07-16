@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>vCard Generator</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Generate vCard</h1>
+        <form action="/generate" method="post" class="mt-4">
+            <div class="form-group">
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name" class="form-control" placeholder="John" required>
+            </div>
+            <div class="form-group">
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" name="last_name" class="form-control" placeholder="Doe" required>
+            </div>
+            <div class="form-group">
+                <label for="work_phone">Work Phone:</label>
+                <input type="text" id="work_phone" name="work_phone" class="form-control" placeholder="935857057">
+            </div>
+            <div class="form-group">
+                <label for="home_phone">Home Phone:</label>
+                <input type="text" id="home_phone" name="home_phone" class="form-control" placeholder="223704246">
+            </div>
+            <div class="form-group">
+                <label for="fax">Fax:</label>
+                <input type="text" id="fax" name="fax" class="form-control" placeholder="223704246">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="example@example.com" required>
+            </div>
+            <div class="form-group">
+                <label for="company">Company:</label>
+                <input type="text" id="company" name="company" class="form-control" placeholder="Company Name">
+            </div>
+            <div class="form-group">
+                <label for="job_title">Job Title:</label>
+                <input type="text" id="job_title" name="job_title" class="form-control" placeholder="Job Title">
+            </div>
+            <div class="form-group">
+                <label for="street">Street:</label>
+                <input type="text" id="street" name="street" class="form-control" placeholder="123 Main St">
+            </div>
+            <div class="form-group">
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" class="form-control" placeholder="Anytown">
+            </div>
+            <div class="form-group">
+                <label for="state">State:</label>
+                <input type="text" id="state" name="state" class="form-control" placeholder="Any State">
+            </div>
+            <div class="form-group">
+                <label for="postal_code">Postal Code:</label>
+                <input type="text" id="postal_code" name="postal_code" class="form-control" placeholder="0000-000">
+            </div>
+            <div class="form-group">
+                <label for="country">Country:</label>
+                <input type="text" id="country" name="country" class="form-control" placeholder="Any Country">
+            </div>
+            <div class="form-group">
+                <label for="website">Website:</label>
+                <input type="url" id="website" name="website" class="form-control" placeholder="www.example.com">
+            </div>
+            <button type="submit" class="btn btn-primary">Generate vCard</button>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
